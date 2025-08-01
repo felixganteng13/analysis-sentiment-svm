@@ -4,6 +4,7 @@ import re
 import string
 import nltk
 nltk.download('punkt_tab')
+nltk.download('sentiwordnet')
 from nltk.corpus import stopwords, sentiwordnet as swn
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
