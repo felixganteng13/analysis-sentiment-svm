@@ -16,31 +16,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-nltk.download('stopwords')
-
-# Download necessary NLTK data
-try:
-    nltk.data.find('corpora/stopwords')
-except nltk.downloader.DownloadError:
-    nltk.download('stopwords')
-try:
-    nltk.data.find('corpora/sentiwordnet')
-except nltk.downloader.DownloadError:
-    nltk.download('sentiwordnet')
-try:
-    nltk.data.find('tokenizers/punkt')
-except nltk.downloader.DownloadError:
-    nltk.download('punkt')
-try:
-    nltk.data.find('taggers/averaged_perceptron_tagger')
-except nltk.downloader.DownloadError:
-    nltk.download('averaged_perceptron_tagger')
-try:
-    nltk.data.find('corpora/wordnet')
-except nltk.downloader.DownloadError:
-    nltk.download('wordnet')
-
-
 # --- Text Cleaning Functions (from previous cells) ---
 def remove_URL(text):
     if text is not None and isinstance(text, str):
