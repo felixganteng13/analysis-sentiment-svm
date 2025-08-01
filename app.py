@@ -6,6 +6,7 @@ import nltk
 nltk.download('punkt_tab')
 nltk.download('sentiwordnet')
 nltk.download('averaged_perceptron_tagger_eng')
+nltk.download('wordnet')
 from nltk.corpus import stopwords, sentiwordnet as swn
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
