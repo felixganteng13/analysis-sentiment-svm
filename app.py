@@ -16,6 +16,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
+nltk.download('stopwords')
+
 # Download necessary NLTK data
 try:
     nltk.data.find('corpora/stopwords')
