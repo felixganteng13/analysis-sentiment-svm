@@ -3,6 +3,7 @@ import pandas as pd
 import re
 import string
 import nltk
+nltk.download('punkt_tab')
 from nltk.corpus import stopwords, sentiwordnet as swn
 from nltk.tokenize import word_tokenize
 from nltk.stem import PorterStemmer
